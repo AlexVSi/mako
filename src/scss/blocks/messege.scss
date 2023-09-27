@@ -1,0 +1,30 @@
+.messege {
+	margin-top: 30px;
+	display: flex;
+	gap: 28px;
+	align-items: center;
+}
+.messege__text {
+	color: #181A1E;
+	font-size: rem(20);
+	font-weight: 900;
+	line-height: prc(24, 20);
+}
+.messenger__list {
+	display: flex;
+	gap: 28px;
+}
+.messenger__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 6px;
+	height: 100%;
+	align-items: center;
+}
+.messenger__name {
+	color: #181A1E;
+	font-size: rem(8);
+	font-weight: 500;
+	line-height: prc(10, 8);
+}

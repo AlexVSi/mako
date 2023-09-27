@@ -1,0 +1,27 @@
+.soft__container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.soft__sub-title {
+	margin-bottom: em(70);
+}
+.soft__list {
+	display: flex;
+	max-width: 65%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+.soft__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.logo__name {
+	font-size: rem(12);
+	line-height: prc(15, 12);
+	font-weight: 500;
+	margin-top: 14px;
+}

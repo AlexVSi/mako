@@ -1,0 +1,218 @@
+.title__section {
+	background: #181A1E;
+	padding: 0 em(15);
+}
+.title__container {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+.title__img-container {
+	position: relative;
+}
+.statue-img {
+	object-fit: contain;
+	width: 100%;
+}
+.plastilina-img {
+	position: absolute;
+	object-fit: contain;
+	right: -80px;
+	top: -40px;
+}
+.title__text {
+	text-align: end;
+	flex: 1 1 65%;
+}
+.h1-title {
+	font-size: rem(60);
+	font-weight: 900;
+	line-height: prc(72, 60);
+	margin-top: 140px;
+	margin-bottom: 6px;
+}
+.title__sub-title {
+	margin-top: 5px;
+	font-size: rem(24);
+	line-height: prc(24, 20);
+	font-weight: 300;
+}
+.title__buttons {
+	margin-top: 40px;
+	display: flex;
+	justify-content: end;
+	gap: 30px;
+}
+.go-button {
+	font-size: rem(24);
+	font-weight: 800;
+	padding: 8px 16px;
+	border-radius: 13px;
+	border: 1px solid #5FD1BE;
+	transition-duration: 200ms;
+	&:hover {
+		background: #5FD1BE;
+	}
+}
+.view-portfolio__button {
+	font-size: rem(24);
+	font-weight: 800;
+	padding: 8px 16px;
+	border-radius: 13px;
+	background: #5FD1BE;
+	box-shadow: 5px 15px 50px 10px rgba(95, 209, 190, 0.30);
+	transition-duration: 200ms;
+	p {
+		color: #181A1E;
+	}
+	&:hover {
+		background: #ffffff;
+	}
+}
+.title__element {
+	width: 73px;
+	height: 1px;
+	background: #ffffff;
+	margin-left: auto;
+	margin-top: 125px;
+}
+.title__comment {
+	font-size: rem(12);
+	line-height: prc(15, 12);
+	font-weight: 300;
+	margin-top: 16px;
+}
+
+@media(max-width: $tablet) {
+	.plastilina-img {
+		display: none;
+	}
+	.h1-title {
+		font-size: rem(50);
+		margin-top: 100px;
+	}
+	.title__sub-title {
+		font-size: rem(20);
+		font-weight: 300;
+	}
+	.title__buttons {
+		margin-top: 30px;
+		gap: 24px;
+	}
+	.go-button {
+		font-size: rem(20);
+	}
+	.view-portfolio__button {
+		font-size: rem(20);
+	}
+	.title__comment {
+		font-size: rem(11);
+		margin-top: 16px;
+	}
+}
+
+@media(max-width: $mobile) {
+	.h1-title {
+		font-size: rem(40);
+		margin-top: 100px;
+	}
+	.title__sub-title {
+		font-size: rem(16);
+		font-weight: 300;
+	}
+	.title__buttons {
+		margin-top: 40px;
+		display: flex;
+		justify-content: end;
+		gap: 15px;
+	}
+	.go-button {
+		font-size: rem(16);
+		border: 1px solid #5FD1BE;
+		transition-duration: 200ms;
+		&:hover {
+			background: #5FD1BE;
+		}
+	}
+	.view-portfolio__button {
+		font-size: rem(16);
+		font-weight: 800;
+	}
+	.title__comment {
+		font-size: rem(12);
+		font-weight: 300;
+		margin-top: 16px;
+	}
+}
+@media(max-width: $mobileSmall) {
+	.title__img-container {
+		display: none;
+	}
+	.title__text {
+		background: url(./../img/greek-statue-image.png) no-repeat center;
+		background-size: cover;
+		border-radius: 25px;
+	}
+	.title__wrap {
+		background: #000000b6;
+		border-radius: 25px;
+		height: 100%;
+		padding: 170px 5px 60px 5px;
+	}
+	.h1-title {
+		font-size: rem(40);
+		font-weight: 900;
+		line-height: prc(72, 60);
+		margin-top: 0;
+		margin-bottom: 6px;
+	}
+	.title__sub-title {
+		margin-top: 5px;
+		font-size: rem(24);
+		line-height: prc(24, 20);
+		font-weight: 300;
+	}
+	.title__buttons {
+		margin-top: 40px;
+		display: flex;
+		justify-content: end;
+		gap: 20px;
+	}
+	.go-button {
+		font-size: rem(20);
+		font-weight: 800;
+		padding: 8px 16px;
+		border-radius: 13px;
+		border: 1px solid #5FD1BE;
+		transition-duration: 200ms;
+		&:hover {
+			background: #5FD1BE;
+		}
+	}
+	.view-portfolio__button {
+		font-size: rem(20);
+		font-weight: 800;
+		padding: 8px 16px;
+		border-radius: 13px;
+		background: #5FD1BE;
+		box-shadow: 5px 15px 50px 10px rgba(95, 209, 190, 0.30);
+		transition-duration: 200ms;
+
+		&:hover {
+			background: #ffffff;
+		}
+	}
+	.title__element {
+		width: 73px;
+		height: 1px;
+		background: #ffffff;
+		margin-left: auto;
+		margin-top: 125px;
+	}
+	.title__comment {
+		font-size: rem(12);
+		line-height: prc(15, 12);
+		font-weight: 300;
+		margin-top: 16px;
+	}
+}

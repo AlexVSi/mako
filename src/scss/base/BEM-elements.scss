@@ -1,0 +1,82 @@
+.section {
+	padding: 0 em(15);
+}
+.container {
+	padding: em(50) calc(50% - 550px);
+}
+.h2 {
+	font-size: rem(36);
+	line-height: prc(44, 36);
+	font-weight: 900;
+	margin-bottom: em(14);
+}
+.element {
+	width: 389px;
+	height: 1px;
+	background: #36D3B7;
+	margin-bottom: em(14);
+}
+.sub-title {
+	font-size: $fontSize;
+	font-weight: 500;
+}
+
+@media(max-width: $tablet) {
+	.container {
+		padding: em(30) calc(50% - 430px);
+	}
+	.h2 {
+		font-size: rem(30);
+		line-height: prc(36, 30);
+		font-weight: 900;
+		margin-bottom: em(12);
+	}
+	.element {
+		width: 389px;
+		height: 1px;
+		background: #36D3B7;
+		margin-bottom: em(12);
+	}
+	.sub-title {
+		font-size: $fontSize;
+		font-weight: 500;
+	}
+}
+
+@media(max-width: $mobile) {
+	.container {
+		padding: em(30) calc(50% - 380px);
+	}
+	.h2 {
+		font-size: rem(24);
+		line-height: prc(29, 24);
+		font-weight: 900;
+		margin-bottom: em(12);
+	}
+	.element {
+		width: 389px;
+		height: 1px;
+		background: #36D3B7;
+		margin-bottom: em(12);
+	}
+	.sub-title {
+		font-size: $fontSize;
+		font-weight: 500;
+	}
+}
+@media(max-width: $mobileSmall) {
+	.container {
+		padding: em(50) calc(50% - 550px);
+	}
+	.h2 {
+		font-size: rem(28);
+		margin-bottom: 12px;
+	}
+	.element {
+		width: 260px;
+		margin-bottom: em(12);
+	}
+	.sub-title {
+		font-size: rem(12);
+	}
+}

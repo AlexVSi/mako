@@ -1,0 +1,223 @@
+.portfolio__sub-title {
+	margin-bottom: em(50);
+}
+
+.portfolio__block {
+	width: 100%;
+	border-radius: 33px;
+	height: 430px;
+	background: url(./../img/salniki.jpg) no-repeat right;
+	background-size: cover;
+}
+.portfolio__gradient-block {
+	width: 100%;
+	height: 100%;
+	padding: 70px 70px 45px 70px;
+	border-radius: 33px;
+	background: linear-gradient(90deg, #5FD1BE 0.28%, rgba(255, 255, 255, 0.95) 44.31%, rgba(255, 255, 255, 0.00) 99.74%);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.work__name {
+	color: #181A1E;
+	font-size: rem(32);
+	font-weight: 800;
+	line-height: prc(39, 32);
+	margin-bottom: 14px;
+}
+.work__text {
+	color: #181A1E;
+	font-size: $fontSize;
+	font-weight: 500;
+	line-height: prc(18, 15);
+	margin-bottom: 24px;
+}
+.see__button {
+	border-radius: 13px;
+	background: #ffffff;
+	box-shadow: 5px 15px 50px 10px rgba(95, 209, 190, 0.40);
+	padding: 10px 20px;
+	font-size: rem(24);
+	font-weight: 800;
+	line-height: prc(29, 24);
+	max-width: 164px;
+	margin-bottom: 30px;
+	transition-duration: 200ms;
+	p {
+		color: #181A1E;
+		text-align: center;
+	}
+	&:hover {
+		background: #181A1E;
+		p {
+			color: #ffffff;
+		}
+	}
+}
+.portfolio__buttons {
+	display: flex;
+	align-self: self-end;
+	gap: 18px;
+}
+
+@media(max-width: $tablet) {
+	.portfolio__sub-title {
+		margin-bottom: em(50);
+	}
+	
+	.portfolio__block {
+		width: 100%;
+		border-radius: 33px;
+		height: 430px;
+		background: url(./../img/salniki.jpg) no-repeat right;
+		background-size: cover;
+	}
+	.portfolio__gradient-block {
+		width: 100%;
+		height: 100%;
+		padding: 70px 70px 45px 70px;
+		border-radius: 33px;
+		background: linear-gradient(90deg, #5FD1BE 0.28%, rgba(255, 255, 255, 0.95) 44.31%, rgba(255, 255, 255, 0.00) 99.74%);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	.work__name {
+		color: #181A1E;
+		font-size: rem(32);
+		font-weight: 800;
+		line-height: prc(39, 32);
+		margin-bottom: 14px;
+	}
+	.work__text {
+		color: #181A1E;
+		font-size: $fontSize;
+		font-weight: 500;
+		line-height: prc(18, 15);
+		margin-bottom: 24px;
+	}
+	.see__button {
+		border-radius: 13px;
+		background: #ffffff;
+		box-shadow: 5px 15px 50px 10px rgba(95, 209, 190, 0.40);
+		padding: 10px 20px;
+		font-size: rem(24);
+		font-weight: 800;
+		line-height: prc(29, 24);
+		width: 164px;
+		margin-bottom: 30px;
+		transition-duration: 200ms;
+		p {
+			color: #181A1E;
+			text-align: center;
+		}
+		&:hover {
+			background: #181A1E;
+			p {
+				color: #ffffff;
+			}
+		}
+	}
+	.portfolio__buttons {
+		display: flex;
+		align-self: self-end;
+		gap: 18px;
+	}
+}
+
+@media(max-width: $mobile) {
+	.portfolio__sub-title {
+		margin-bottom: em(50);
+	}
+	
+	.portfolio__block {
+		width: 100%;
+		border-radius: 33px;
+		height: 430px;
+		background: url(./../img/salniki.jpg) no-repeat right;
+		background-size: cover;
+	}
+	.portfolio__gradient-block {
+		width: 100%;
+		height: 100%;
+		padding: 70px 70px 45px 70px;
+		border-radius: 33px;
+		background: linear-gradient(90deg, #5FD1BE 0.28%, rgba(255, 255, 255, 0.95) 44.31%, rgba(255, 255, 255, 0.00) 99.74%);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	.work__name {
+		color: #181A1E;
+		font-size: rem(32);
+		font-weight: 800;
+		line-height: prc(39, 32);
+		margin-bottom: 14px;
+	}
+	.work__text {
+		color: #181A1E;
+		font-size: $fontSize;
+		font-weight: 500;
+		line-height: prc(18, 15);
+		margin-bottom: 24px;
+	}
+	.see__button {
+		border-radius: 13px;
+		background: #ffffff;
+		box-shadow: 5px 15px 50px 10px rgba(95, 209, 190, 0.40);
+		padding: 10px 20px;
+		font-size: rem(24);
+		font-weight: 800;
+		line-height: prc(29, 24);
+		width: 164px;
+		margin-bottom: 30px;
+		transition-duration: 200ms;
+		p {
+			color: #181A1E;
+			text-align: center;
+		}
+		&:hover {
+			background: #181A1E;
+			p {
+				color: #ffffff;
+			}
+		}
+	}
+	.portfolio__buttons {
+		display: flex;
+		align-self: self-end;
+		gap: 18px;
+	}
+
+}
+@media(max-width: $mobileSmall) {
+	.portfolio__block {
+		height: 240px;
+		background: url(./../img/salniki.jpg) no-repeat right;
+		background-size: cover;
+	}
+	.portfolio__gradient-block {
+		padding: 20px;
+	}
+	.work__name {
+		color: #181A1E;
+		font-size: rem(26);
+		margin-bottom: 12px;
+	}
+	.work__text {
+		font-size: $fontSize;
+		margin-bottom: 20px;
+	}
+	.see__button {
+		padding: 10px 20px;
+		font-size: rem(16);
+		width: 120px;
+		margin-bottom: 24px;
+	}
+	.portfolio__buttons {
+		display: flex;
+		align-self: self-end;
+		gap: 18px;
+	}
+}

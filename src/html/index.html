@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('blocks/head.html', {
+	'title': 'Главная',
+})
+<body>
+	<div class="wrapper">
+	@@include('blocks/header.html')
+	<main>
+		@@include('blocks/title.html')
+		@@include('blocks/about.html')
+		@@include('blocks/portfolio.html')
+		@@include('blocks/soft.html')
+		@@include('blocks/form.html')
+	</main>
+	@@include('blocks/footer.html')
+	</div>
+	<script src="./js/index.bundle.js"></script>
+</body>
+</html>

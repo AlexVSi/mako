@@ -1,0 +1,14 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	background-color: $backgroundColor;
+}
+
+div, p {
+	font-family: Inter;
+	color: $mainColor;
+}
