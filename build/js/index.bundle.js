@@ -1,1 +1,1 @@
-console.log("Hello, world!");
+!function(){function e(){const e=document.querySelector(".about__container"),t=getComputedStyle(e).marginLeft;document.querySelector(".form__container").style.marginLeft=t,document.querySelector(".smile__area").style.paddingRight=t}e(),window.addEventListener("resize",(t=>{e()}))}();

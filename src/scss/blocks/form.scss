@@ -1,9 +1,26 @@
+.form__section {
+	padding-right: 0;
+	display: flex;
+	background: #FFF9F9;
+	// position: relative;
+	border-radius: 0 28px 0 0;
+}
+.border__container {
+	flex: 1 1 auto;
+}
+.form__container {
+	// margin: 0;
+	width: 1200px;
+	margin: em(50) 0;
+	flex: 1 1 auto;
+}
 .form__block {
 	display: flex;
 	justify-content: space-between;
+	max-width: 900px;
 	img {
 		object-fit: contain;
-		padding-right: 60px;
+		// padding-right: 60px;
 	}
 }
 .form {
@@ -124,4 +141,54 @@ textarea {
 	border-radius: 13px;
 	background: none;
 	border: 1px solid #5FD1BE;
+}
+// =========================================================
+.application__block {
+	padding-top: em(50);
+}
+.smile {
+	padding-bottom: em(24);
+}
+.review__block {
+	padding-bottom: em(50);
+}
+.h2__application-title {
+	color: #181A1E;
+	margin-bottom: 20px;
+}
+.application__element {
+	width: 430px;
+}
+.application__sub-title {
+	color: #181A1E;
+	margin-bottom: em(30);
+}
+// =========================================================
+.smile__area {
+	background: $backgroundColor;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	img {
+		width: 100%;
+		margin-top: -100px;
+		margin-left: -60px;
+		object-fit: cover;
+	}
+}
+.up {
+	display: flex;
+	padding-left: 20px;
+	gap: 4px;
+	p {
+		padding-top: 6px;
+		font-weight: 500;
+	}
+	img {
+		display: none;
+		// margin: 0;
+		// padding: 0;
+		// object-fit: cover;
+		// height: 100%;
+	}
 }
