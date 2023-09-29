@@ -21,20 +21,12 @@ div, p {
 	flex-direction: column;
 }
 .section {
-	padding: 0 em(15);
-	// padding: em(50) 0 ;
+	padding: em(50) 0;
 }
 .container {
-	// padding: em(50) calc(50vw - 590px);
-	max-width: 1200px;
-	// margin: 0 auto;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-right: auto;
-	margin-left: auto;
-	// padding-top: em(50);
-	// padding-bottom: em(50);
-	padding: em(50) 0;
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0 em(15);
 }
 .h2 {
 	font-size: rem(36);
