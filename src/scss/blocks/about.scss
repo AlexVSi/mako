@@ -119,34 +119,34 @@
 // 	}
 
 // }
-// @media(max-width: $mobileSmall) {
-// 	.about__section {
-// 		background: url(./../img/decor-m.svg) right 14% no-repeat;
-// 		background: none;
-// 	}
-// 	.about__sub-title {
-// 		margin-bottom: em(50);
-// 	}
-// 	.services {
-// 		gap: 30px;
-// 		width: 100%;
-// 	}
-// 	.servise__block {
-// 		flex: 0 0 100%;
-// 		display: flex;
-// 		gap: 18px;
-// 		padding: 4px;
-// 	}
-// 	.service__img-container {
-// 		width: 25%;
-// 	}
-// 	.service__img {
-// 		object-fit: contain;
-// 	}
-// 	.service__title {
-// 		font-size: rem(18);
-// 	}
-// 	.servise__subtitle {
-// 		font-size: rem(13);
-// 	}
-// }
+@media(max-width: $mobileSmall) {
+	.about__section {
+		background: url(./../img/decor-m.svg) right 14% no-repeat;
+		background: none;
+	}
+	.about__sub-title {
+		margin-bottom: em(50);
+	}
+	.services {
+		gap: 30px;
+		width: 100%;
+	}
+	.servise__block {
+		flex: 0 0 100%;
+		display: flex;
+		gap: 18px;
+		padding: 4px;
+	}
+	.service__img-container {
+		width: 25%;
+	}
+	.service__img {
+		object-fit: contain;
+	}
+	.service__title {
+		font-size: rem(18);
+	}
+	.servise__subtitle {
+		font-size: rem(13);
+	}
+}
