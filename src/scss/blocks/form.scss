@@ -1,19 +1,77 @@
+.review__block {
+	padding-right: 70px;
+}
+.h2__review-title {
+	color: #181A1E;
+	margin-bottom: 20px;
+}
+.review__element {
+	width: 90%;
+	margin-bottom: 16px;
+}
+.review__sub-title {
+	margin-bottom: 40px;
+	color: #181A1E;
+}
+.review__buttons {
+	display: flex;
+	// justify-content: space-between;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+.go-work__button {
+	background: #5FD1BE;
+	border: #5FD1BE 1px solid;
+	box-shadow: 5px 15px 50px 10px rgba(95, 209, 190, 0.30);
+	&:hover {
+		background: #ffffff;
+	}
+	p {
+		color: #181A1E;
+	}
+}
+.no-work__button {
+	border: 1px solid #5FD1BE;
+	&:hover {
+		background: #5fd1be;
+	}
+	p {
+		color: #181A1E;
+	}
+}
 .form__section {
-	padding-right: 0;
 	display: flex;
 	padding: 0;
 	background: #FFF9F9;
 }
 .form__container {
-	padding-left: 15px;
+	padding: 0 15px;
 	// width: 1200px;
 	margin: em(50) 0;
 	flex: 1 1 auto;
 	border-radius: 0 28px 28px 0;
 	// border-radius: 28px;
 	background-color: #FFF9F9;
-
 }
+// =========================================================
+.application__block {
+	padding-top: em(50);
+}
+.smile {
+	padding-bottom: em(24);
+}
+.review__block {
+	padding-bottom: em(50);
+}
+.h2__application-title {
+	color: #181A1E;
+	margin-bottom: 20px;
+}
+.application__sub-title {
+	color: #181A1E;
+	margin-bottom: em(30);
+}
+// =========================================================
 .form__block {
 	display: flex;
 	justify-content: space-between;
@@ -27,6 +85,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+	// justify-content: space-between;
 }
 input {
 	width: 100%;
@@ -35,6 +94,7 @@ input {
 	border: 1px solid #5FD1BE;
 	color: #181A1E;
 	padding: 8px;
+	font-size: rem(14);
 }
 select {
 	width: 100%;
@@ -42,6 +102,7 @@ select {
 	border-radius: 13px;
 	border: 1px solid #5FD1BE;
 	padding: 8px;
+	font-size: rem(14);
 	-webkit-appearance: none;
 	appearance: none;
 	&::after {
@@ -52,23 +113,26 @@ select {
 }
 option {
 	color: #181A1E;
+	font-size: rem(14);
 }
 textarea {
 	width: 100%;
-	height: 110px;
+	height: 120px;
 	border-radius: 13px;
 	border: 1px solid #5FD1BE;
 	padding: 8px;
 }
 .input__box {
 	flex: 0 0 45%;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
 .input__title {
 	color: #181A1E;
 	font-size: $fontSize;
 	font-weight: 800;
 	line-height: prc(18, 15);
-	margin-bottom: 8px;
 	span {
 		color: #5FD1BE;
 	}
@@ -83,7 +147,7 @@ textarea {
 	color: #181A1E;
 	font-size: rem(12);
 	font-weight: 500;
-	line-height: prc(12, 15);
+	line-height: prc(15, 12);
 	display: inline-flex;
 	align-items: center;
 	width: 100%;
@@ -111,63 +175,38 @@ textarea {
 		transform: scale(0);
 	}
 }
-
 .send__box {
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	gap: 8px;
 }
 .form__buttons {
 	display: flex;
 	gap: 20px;
 }
 .send__button {
+	flex: 1 1 auto;
 	color: #181A1E;
 	font-size: rem(15);
-	font-weight: 800;
-	line-height: prc(18, 15);
-	padding: 8px 20px;
-	border-radius: 13px;
 	background: #5FD1BE;
 	box-shadow: 5px 15px 50px 10px rgba(95, 209, 190, 0.30);
 }
 .cancle__button {
+	flex: 1 1 auto;
 	color: #181A1E;
 	font-size: rem(15);
-	font-weight: 800;
-	line-height: prc(18, 15);
 	padding: 8px 30px;
-	border-radius: 13px;
 	background: none;
 	border: 1px solid #5FD1BE;
-}
-// =========================================================
-.application__block {
-	padding-top: em(50);
-}
-.smile {
-	padding-bottom: em(24);
-}
-.review__block {
-	padding-bottom: em(50);
-}
-.h2__application-title {
-	color: #181A1E;
-	margin-bottom: 20px;
-}
-.application__element {
-	width: 430px;
-}
-.application__sub-title {
-	color: #181A1E;
-	margin-bottom: em(30);
 }
 // =========================================================
 .messege {
 	margin-top: 30px;
 	display: flex;
 	gap: 28px;
+	flex-wrap: wrap;
 	align-items: center;
 }
 .messege__text {
@@ -221,6 +260,58 @@ textarea {
 		margin: 0;
 		object-fit: contain;
 		width: auto;
-		// height: 100%;
+	}
+}
+
+// TABLET ====================================================
+@media(max-width: $tablet) {
+	.form__container {
+		margin: em(50) auto;
+		padding: 0 15px;
+	}
+	.review__block {
+		padding-right: 0;
+	}
+	.form__block {
+		img {
+			padding-right: 0;
+		}
+	}
+	.smile__area {
+		display: none;
+	}
+}
+
+// MOBILE ==================================================
+@media(max-width: $mobile) {
+	.review__buttons {
+		gap: 14px;
+	}
+	.form__block {
+		img {
+			padding-right: 0;
+			display: none;
+		}
+	}
+}
+// MOBILE_SMALL ==================================================
+@media(max-width: $mobileSmall) {
+	.review__buttons {
+		a {
+			flex: 1 1 100%;
+			p {
+				width: auto;
+			}
+		}
+	}
+	.form {
+		gap: 20px;
+	}
+	.input__box {
+		flex: 1 1 100%;
+		gap: 16px;
+	}
+	.messege__text {
+		font-size: rem(18);
 	}
 }

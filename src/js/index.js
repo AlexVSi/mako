@@ -39,6 +39,7 @@ console.log(webs)
 const slider = document.querySelector('.portfolio__slider');
 const prevButton = document.querySelector('.back__button');
 const nextButton = document.querySelector('.next__button');
+const gradient = document.querySelector('.portfolio__gradient-block')
 // const slides = Array.from(slider.querySelectorAll('.portfolio__slider'));
 const slideCount = webs.length
 let slideIndex = 0;
@@ -55,8 +56,8 @@ nextButton.addEventListener('click', showNextSlide);
 
 // Функция для показа предыдущего слайда
 function showPreviousSlide() {
-  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
-  updateSlider();
+	slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+	updateSlider();
 }
 
 // Функция для показа следующего слайда
@@ -67,11 +68,20 @@ function showNextSlide() {
 
 function updateSlider() {
 	let web = webs[slideIndex]
+	// img.style.display = 'none'
+	// title.style.display = 'none'
+	// text.style.display = 'none'
+	// link.style.display = 'none'
+
 	img.setAttribute('src', `${web.imgPath}`)
 	title.innerHTML = web.title
 	text.textContent = web.text
 	link.href = web.link
-	console.log(web.title)
+
+	// img.style.display = 'block'
+	// title.style.display = 'block'
+	// text.style.display = 'block'
+	// link.style.display = 'block'
 }
 
 // Инициализация слайдера

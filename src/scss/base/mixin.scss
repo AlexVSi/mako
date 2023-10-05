@@ -31,7 +31,7 @@
 }
 //TO REM
 @function rem($px) {
-	$result: math.div($px, 16) + rem;
+	$result: math.div($px, 14) + rem;
 	@return $result;
 }
 //TO EM

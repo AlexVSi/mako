@@ -32,75 +32,60 @@ div, p {
 	font-size: rem(36);
 	line-height: prc(44, 36);
 	font-weight: 900;
-	margin-bottom: em(14);
+	margin-bottom: 14px;
 }
 .element {
 	width: 389px;
 	height: 1px;
 	background: #36D3B7;
-	margin-bottom: em(14);
+	margin-bottom: 14px;
 }
 .sub-title {
 	font-size: $fontSize;
 	font-weight: 500;
+	line-height: prc(19, 15);
+}
+.button {
+	font-size: rem(24);
+	font-weight: 800;
+	padding: 10px 20px;
+	line-height: prc(29, 24);
+	text-align: center;
+	border-radius: 13px;
+	transition-duration: 200ms;
+}
+@media(max-width: $tablet) {
+	.container {
+		max-width: 800px;
+	}
+	.section {
+		padding: em(30) 0;
+	}
+	.button {
+		font-size: rem(22);
+	}
 }
 
-// @media(max-width: $tablet) {
-// 	.container {
-// 		padding: em(30) calc(50% - 430px);
-// 	}
-// 	.h2 {
-// 		font-size: rem(30);
-// 		line-height: prc(36, 30);
-// 		font-weight: 900;
-// 		margin-bottom: em(12);
-// 	}
-// 	.element {
-// 		width: 389px;
-// 		height: 1px;
-// 		background: #36D3B7;
-// 		margin-bottom: em(12);
-// 	}
-// 	.sub-title {
-// 		font-size: $fontSize;
-// 		font-weight: 500;
-// 	}
-// }
+@media(max-width: $mobile) {
+	.container {
+		// max-width: 600px;
+	}
+	.button {
+		font-size: rem(17);
+		padding: 8px 16px;
+	}
+}
 
-// @media(max-width: $mobile) {
-// 	.container {
-// 		padding: em(30) calc(50% - 380px);
-// 	}
-// 	.h2 {
-// 		font-size: rem(24);
-// 		line-height: prc(29, 24);
-// 		font-weight: 900;
-// 		margin-bottom: em(12);
-// 	}
-// 	.element {
-// 		width: 389px;
-// 		height: 1px;
-// 		background: #36D3B7;
-// 		margin-bottom: em(12);
-// 	}
-// 	.sub-title {
-// 		font-size: $fontSize;
-// 		font-weight: 500;
-// 	}
-// }
-// @media(max-width: $mobileSmall) {
-// 	.container {
-// 		padding: em(50) calc(50% - 550px);
-// 	}
-// 	.h2 {
-// 		font-size: rem(28);
-// 		margin-bottom: 12px;
-// 	}
-// 	.element {
-// 		width: 260px;
-// 		margin-bottom: em(12);
-// 	}
-// 	.sub-title {
-// 		font-size: rem(12);
-// 	}
-// }
+@media(max-width: $mobileSmall) {
+	.h2 {
+		font-size: rem(26);
+		margin-bottom: 14px;
+	}
+	.element {
+		width: 90%;
+	}
+	.sub-title {
+		font-size: rem(13);
+		font-weight: 500;
+	}
+}

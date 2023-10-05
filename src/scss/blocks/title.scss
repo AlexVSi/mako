@@ -4,7 +4,7 @@
 .title__container {
 	display: flex;
 	justify-content: space-between;
-	gap: 20px;
+	gap: 10px;
 }
 .title__img-container {
 	position: relative;
@@ -12,6 +12,7 @@
 .statue-img {
 	object-fit: contain;
 	width: 100%;
+	border-radius: 33px;
 }
 .plastilina-img {
 	position: absolute;
@@ -43,24 +44,14 @@
 	gap: 30px;
 }
 .go-button {
-	font-size: rem(24);
-	font-weight: 800;
-	padding: 8px 16px;
-	border-radius: 13px;
 	border: 1px solid #5FD1BE;
-	transition-duration: 200ms;
 	&:hover {
 		background: #5FD1BE;
 	}
 }
 .view-portfolio__button {
-	font-size: rem(24);
-	font-weight: 800;
-	padding: 8px 16px;
-	border-radius: 13px;
 	background: #5FD1BE;
 	box-shadow: 5px 15px 50px 10px rgba(95, 209, 190, 0.30);
-	transition-duration: 200ms;
 	p {
 		color: #181A1E;
 	}
@@ -92,24 +83,22 @@
 	}
 	.title__sub-title {
 		font-size: rem(20);
-		font-weight: 300;
 	}
 	.title__buttons {
 		margin-top: 30px;
-		gap: 24px;
+		gap: 18px;
 	}
 	.go-button {
-		font-size: rem(20);
+		// font-size: rem(22);
 	}
 	.view-portfolio__button {
-		font-size: rem(20);
+		// font-size: rem(22);
 	}
 	.title__comment {
 		font-size: rem(11);
 		margin-top: 16px;
 	}
 }
-
 @media(max-width: $mobile) {
 	.h1-title {
 		font-size: rem(40);
@@ -123,23 +112,13 @@
 		margin-top: 40px;
 		display: flex;
 		justify-content: end;
-		gap: 15px;
+		gap: 8px;
 	}
-	.go-button {
-		font-size: rem(16);
-		border: 1px solid #5FD1BE;
-		transition-duration: 200ms;
-		&:hover {
-			background: #5FD1BE;
-		}
-	}
-	.view-portfolio__button {
-		font-size: rem(16);
-		font-weight: 800;
+	.title-element {
+		margin-top: 60px;
 	}
 	.title__comment {
 		font-size: rem(12);
-		font-weight: 300;
 		margin-top: 16px;
 	}
 }
@@ -148,7 +127,7 @@
 		display: none;
 	}
 	.title__text {
-		background: url(./../img/greek-statue-image.png) no-repeat center;
+		background: url(./../img/greek-statue-image.jpg) no-repeat center;
 		background-size: cover;
 		border-radius: 25px;
 	}
@@ -156,50 +135,23 @@
 		background: #000000b6;
 		border-radius: 25px;
 		height: 100%;
-		padding: 170px 5px 60px 5px;
+		padding: 140px 5px 40px 5px;
 	}
 	.h1-title {
-		font-size: rem(40);
-		font-weight: 900;
-		line-height: prc(72, 60);
+		font-size: rem(38);
 		margin-top: 0;
 		margin-bottom: 6px;
 	}
 	.title__sub-title {
 		margin-top: 5px;
-		font-size: rem(24);
-		line-height: prc(24, 20);
-		font-weight: 300;
+		font-size: rem(20);
 	}
 	.title__buttons {
-		margin-top: 40px;
-		display: flex;
-		justify-content: end;
-		gap: 20px;
+		gap: 8px;
 	}
 	.go-button {
-		font-size: rem(20);
-		font-weight: 800;
-		padding: 8px 16px;
-		border-radius: 13px;
-		border: 1px solid #5FD1BE;
-		transition-duration: 200ms;
-		&:hover {
-			background: #5FD1BE;
-		}
 	}
 	.view-portfolio__button {
-		font-size: rem(20);
-		font-weight: 800;
-		padding: 8px 16px;
-		border-radius: 13px;
-		background: #5FD1BE;
-		box-shadow: 5px 15px 50px 10px rgba(95, 209, 190, 0.30);
-		transition-duration: 200ms;
-
-		&:hover {
-			background: #ffffff;
-		}
 	}
 	.title__element {
 		width: 73px;
@@ -209,9 +161,5 @@
 		margin-top: 125px;
 	}
 	.title__comment {
-		font-size: rem(12);
-		line-height: prc(15, 12);
-		font-weight: 300;
-		margin-top: 16px;
 	}
 }

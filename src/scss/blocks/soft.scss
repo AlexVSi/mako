@@ -1,5 +1,7 @@
+.soft__section {
+	padding-bottom: em(60);
+}
 .soft__container {
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -9,10 +11,8 @@
 }
 .soft__list {
 	display: flex;
-	max-width: 65%;
-	justify-content: space-between;
 	flex-wrap: wrap;
-	gap: 40px;
+	gap: 60px;
 }
 .soft__item {
 	display: flex;
@@ -24,4 +24,18 @@
 	line-height: prc(15, 12);
 	font-weight: 500;
 	margin-top: 14px;
+}
+
+@media(max-width: $tablet) {
+	.soft__list {
+		max-width: 100%;
+	}
+}
+@media(max-width: $mobile) {
+	.soft__list {
+		gap: 30px;
+	}
+	.soft__item {
+		flex: 0 0 25%;
+	}
 }
