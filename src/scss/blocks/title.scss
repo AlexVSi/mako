@@ -1,5 +1,6 @@
 .title__section {
 	background: #181A1E;
+	padding-top: em(30);
 }
 .title__container {
 	display: flex;
@@ -20,15 +21,19 @@
 	right: -80px;
 	top: -40px;
 }
-.title__text {
+.title__text-block {
 	text-align: end;
 	flex: 1 1 65%;
+}
+.title__wrap {
+	display: flex;
+	flex-direction: column;
 }
 .h1-title {
 	font-size: rem(60);
 	font-weight: 900;
 	line-height: prc(72, 60);
-	margin-top: 140px;
+	margin-top: 100px;
 	margin-bottom: 6px;
 }
 .title__sub-title {
@@ -42,6 +47,7 @@
 	display: flex;
 	justify-content: end;
 	gap: 30px;
+	flex-wrap: wrap;
 }
 .go-button {
 	border: 1px solid #5FD1BE;
@@ -63,8 +69,8 @@
 	width: 73px;
 	height: 1px;
 	background: #ffffff;
-	margin-left: auto;
 	margin-top: 125px;
+	align-self: flex-end;
 }
 .title__comment {
 	font-size: rem(12);
@@ -74,12 +80,9 @@
 }
 
 @media(max-width: $tablet) {
-	.plastilina-img {
-		display: none;
-	}
 	.h1-title {
 		font-size: rem(50);
-		margin-top: 100px;
+		margin-top: 10px;
 	}
 	.title__sub-title {
 		font-size: rem(20);
@@ -88,34 +91,20 @@
 		margin-top: 30px;
 		gap: 18px;
 	}
-	.go-button {
-		// font-size: rem(22);
-	}
-	.view-portfolio__button {
-		// font-size: rem(22);
+	.title__element {
+		margin-top: 50px;
 	}
 	.title__comment {
-		font-size: rem(11);
 		margin-top: 16px;
 	}
 }
 @media(max-width: $mobile) {
 	.h1-title {
 		font-size: rem(40);
-		margin-top: 100px;
 	}
 	.title__sub-title {
 		font-size: rem(16);
 		font-weight: 300;
-	}
-	.title__buttons {
-		margin-top: 40px;
-		display: flex;
-		justify-content: end;
-		gap: 8px;
-	}
-	.title-element {
-		margin-top: 60px;
 	}
 	.title__comment {
 		font-size: rem(12);
@@ -126,10 +115,11 @@
 	.title__img-container {
 		display: none;
 	}
-	.title__text {
+	.title__text-block {
 		background: url(./../img/greek-statue-image.jpg) no-repeat center;
 		background-size: cover;
 		border-radius: 25px;
+		text-align: start;
 	}
 	.title__wrap {
 		background: #000000b6;
@@ -148,18 +138,9 @@
 	}
 	.title__buttons {
 		gap: 8px;
-	}
-	.go-button {
-	}
-	.view-portfolio__button {
+		justify-content: start;
 	}
 	.title__element {
-		width: 73px;
-		height: 1px;
-		background: #ffffff;
-		margin-left: auto;
-		margin-top: 125px;
-	}
-	.title__comment {
+		align-self: start;
 	}
 }

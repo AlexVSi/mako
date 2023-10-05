@@ -28,18 +28,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	animation: gradient-fill 2s;
-}
-@keyframes gradient-fill{
-	0% {
-		background: linear-gradient(90deg, #5FD1BE 0.28%, rgba(255, 255, 255, 0.95) 44.31%, rgba(255, 255, 255, 0.00) 99.74%);
-	}
-	50% {
-		background: linear-gradient(90deg, #5FD1BE 23.07%, rgba(255, 255, 255, 0.95) 99.73%, rgba(255, 255, 255, 0.00) 99.74%);
-	}
-	100% {
-		background: linear-gradient(90deg, #5FD1BE 23.07%, rgba(255, 255, 255, 0.95) 99.73%, rgba(255, 255, 255, 0.00) 99.74%);
-	}
 }
 .work__title {
 	color: #181A1E;

@@ -68,20 +68,12 @@ function showNextSlide() {
 
 function updateSlider() {
 	let web = webs[slideIndex]
-	// img.style.display = 'none'
-	// title.style.display = 'none'
-	// text.style.display = 'none'
-	// link.style.display = 'none'
 
 	img.setAttribute('src', `${web.imgPath}`)
 	title.innerHTML = web.title
 	text.textContent = web.text
 	link.href = web.link
-
-	// img.style.display = 'block'
-	// title.style.display = 'block'
-	// text.style.display = 'block'
-	// link.style.display = 'block'
+	
 }
 
 // Инициализация слайдера
