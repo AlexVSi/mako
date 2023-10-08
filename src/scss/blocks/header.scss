@@ -9,10 +9,15 @@
 	height: auto;
 	padding-top: 0;
 	padding-bottom: 0;
+	height: 145px;
 }
 .header__img {
 	margin: 0 120px;
+	// width: 256px;
 	height: 100%;
+}
+.logo {
+	width: 110px;
 }
 @media(max-width: $tablet) {
 	.header__container {

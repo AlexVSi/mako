@@ -73,7 +73,6 @@ function updateSlider() {
 	title.innerHTML = web.title
 	text.textContent = web.text
 	link.href = web.link
-	
 }
 
 // Инициализация слайдера

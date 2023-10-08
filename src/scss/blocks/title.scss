@@ -9,15 +9,17 @@
 }
 .title__img-container {
 	position: relative;
+	max-width: 333px;
 }
 .statue-img {
 	object-fit: contain;
-	width: 100%;
+	max-width: 100%;
 	border-radius: 33px;
 }
 .plastilina-img {
 	position: absolute;
 	object-fit: contain;
+	width: 108px;
 	right: -80px;
 	top: -40px;
 }
@@ -109,6 +111,9 @@
 	.title__comment {
 		font-size: rem(12);
 		margin-top: 16px;
+	}
+	.plastilina-img {
+		display: none;
 	}
 }
 @media(max-width: $mobileSmall) {

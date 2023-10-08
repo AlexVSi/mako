@@ -14,7 +14,7 @@
 	<div class="header__container container">
 		<img src="img/gear.png" alt="" class="header__img">
 		<a href="#" class="header__logo">
-			<img src="img/logo.png" alt="Логотип" class="">
+			<img src="img/logo.png" alt="Логотип" class="logo">
 		</a>
 	</div>
 </header>
@@ -144,32 +144,32 @@
 		<ul class="soft__list">
 
 			<li class="soft__item">
-				<img src="img/Figma.png" alt="" class="soft__logo">
+				<img src="img/Figma.png" alt="">
 				<p class="logo__name">Figma</p>
 			</li>
 
 			<li class="soft__item">
-				<img src="img/Tilda.png" alt="" class="soft__logo">
+				<img src="img/Tilda.png" alt="">
 				<p class="logo__name">Tilda</p>
 			</li>
 
 			<li class="soft__item">
-				<img src="img/VSC.png" alt="" class="soft__logo">
+				<img src="img/VSC.png" alt="">
 				<p class="logo__name">VS Code</p>
 			</li>
 
 			<li class="soft__item">
-				<img src="img/Illustrator.png" alt="" class="soft__logo">
+				<img src="img/Illustrator.png" alt="">
 				<p class="logo__name">Illustrator</p>
 			</li>
 
 			<li class="soft__item">
-				<img src="img/Photoshop.png" alt="" class="soft__logo">
+				<img src="img/Photoshop.png" alt="">
 				<p class="logo__name">Photoshop</p>
 			</li>
 
 			<li class="soft__item">
-				<img src="img/PowerPoint.png" alt="" class="soft__logo">
+				<img src="img/PowerPoint.png" alt="">
 				<p class="logo__name">PowerPoint</p>
 			</li>
 		</ul>
@@ -216,17 +216,20 @@
 
 						<div class="input__box">
 							<p class="input__title">Вы хотите заказать... <span>*</span></p>
-							<select type="">
-								<option>Логотип</option>
-								<option>Упаковку</option>
-								<option>Сайт</option>
-								<option>Баннер</option>
-								<option>Оформление соц. сети</option>
-								<option>Визитку</option>
-								<option>Брендбук</option>
-								<option>Вёрстку</option>
-								<option>Другое</option>
-							</select>
+							<div class="select__box">
+								<select type="">
+									<option selected disabled style="display: none;"></option>
+									<option>Логотип</option>
+									<option>Упаковку</option>
+									<option>Сайт</option>
+									<option>Баннер</option>
+									<option>Оформление соц. сети</option>
+									<option>Визитку</option>
+									<option>Брендбук</option>
+									<option>Вёрстку</option>
+									<option>Другое</option>
+								</select>
+							</div>
 						</div>
 						<div class="input__box">
 							<p class="input__title">Название вашего проекта</p>
@@ -239,12 +242,15 @@
 						</div>
 						<div class="input__box send__box">
 							<p class="input__title">Как вы нас нашли?</p>
-							<select type="">
-								<option>Реклама в соц. сетях</option>
-								<option>По запросу в интернете</option>
-								<option>Подсказали друзья/знакомые</option>
-								<option>Другое</option>
-							</select>
+							<div class="select__box">
+								<select type="">
+									<option selected disabled style="display: none;"></option>
+									<option>Реклама в соц. сетях</option>
+									<option>По запросу в интернете</option>
+									<option>Подсказали друзья/знакомые</option>
+									<option>Другое</option>
+								</select>
+							</div>
 							<div class="checkbox">
 								<input class="checkbox__input" type="checkbox" id="check" value="check">
 								<label for="check" class="checkbox__label">даю согласие на обработку моих данных</label>
@@ -255,7 +261,7 @@
 							</div>
 						</div>
 					</form>
-					<img src="img/document-icon.png" alt="" class="form__img">
+					<img src="img/document-icon.png" alt="">
 				</div>
 
 				<div class="messege">
@@ -263,19 +269,19 @@
 					<ul class="messenger__list">
 						<a href="">
 							<li class="messenger__item">
-								<img src="img/Telegram.svg" alt="" class="messenger__logo">
+								<img src="img/Telegram.png" alt="" class="messenger__logo">
 								<p class="messenger__name">Telegram</p>
 							</li>
 						</a>
 						<a href="">
 							<li class="messenger__item">
-								<img src="img/WhatsApp.svg" alt="" class="messenger__logo">
+								<img src="img/WhatsApp.png" alt="" class="messenger__logo">
 								<p class="messenger__name">WhatsApp</p>
 							</li>
 						</a>
 						<a href="">
 							<li class="messenger__item">
-								<img src="img/Viber.svg" alt="" class="messenger__logo">
+								<img src="img/Viber.png" alt="" class="messenger__logo">
 								<p class="messenger__name">Viber</p>
 							</li>
 						</a>
@@ -297,7 +303,7 @@
 </section>
 	</main>
 	<footer>
-	<p class="copyright">&#169 Имя Фамилия</p>
+	<p class="copyright">&#169 Александр Сидоренко</p>
 </footer>
 	</div>
 	<script src="./js/index.bundle.js"></script>

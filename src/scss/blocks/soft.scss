@@ -18,6 +18,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	img {
+		max-width: 70px;
+		object-fit: cover;
+	}
 }
 .logo__name {
 	font-size: rem(12);
