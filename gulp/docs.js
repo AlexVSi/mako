@@ -115,7 +115,7 @@ gulp.task('js:docs', function() {
 		.pipe(changed('./docs/js/'))
 		.pipe(plumber(plumberNotify('JS')))
 		.pipe(babel())
-		.pipe(webpack(require('../webpack.config.js')))
+		// .pipe(webpack(require('../webpack.config.js')))
 		.pipe(gulp.dest('./docs/js'))
 })
 

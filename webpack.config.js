@@ -1,8 +1,8 @@
 const config = {
 	mode: 'production',
 	entry: {
+		swiper: './src/js/swiper.js',
 		index: './src/js/index.js',
-		// contacts: './src/js/contacts.js',
 	},
 	output: {
 		filename: '[name].bundle.js',
@@ -11,7 +11,7 @@ const config = {
 		rules: [
 			{
 				test: /\.css$/,
-				use: ['style-loader', 'cs-loader']
+				use: ['style-loader', 'css-loader']
 			},
 		],
 	},
