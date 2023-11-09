@@ -120,16 +120,61 @@
 		<h2 class="h2__portfolio-title h2">Наше портфолио</h2>
 		<div class="portfolio__element element"></div>
 		<div class="portfolio__sub-title sub-title">Вкратце, потому что мы ценим ваше время</div>
-		<div class="portfolio__slider">
-			<img src="./img/salniki.jpg" class='portfolio__img' alt="">
-			<div class="portfolio__gradient-block">
-				<p class="work__title">Название сайта</p>
-				<p class="work__text">Краткое описание</p>
-				<a href="" class="see__button button"><p>Смотреть</p></a>
-				<div class="portfolio__buttons">
-					<img src="./img/back.svg" alt="" class="back__button">
-					<img src="./img/next.svg" alt="" class="next__button">
+		<div class="portfolio__slider swiper-container swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide__container">
+					<div class="slide__wrapper">
+						<img src="./img/salniki.jpg" class='portfolio__img' alt="">
+						<div class="portfolio__work-block">
+							<p class="work__title">Сайт <br/> для автосервиса</p>
+							<p class="work__text">с онлайн-калькулятором и SEO-оптимизацией</p>
+							<a href="https://www.reica.md" target="_blank" class="see__button button"><p>Смотреть</p></a>
+						</div>
+					</div>
 				</div>
+				<div class="swiper-slide slide__container">
+					<div class="slide__wrapper">
+						<img src="./img/GlavLendStroy.jpg" class='portfolio__img' alt="">
+						<div class="portfolio__work-block">
+							<p class="work__title">Сайт <br/> для строительной компании</p>
+							<p class="work__text">с современным дизайном</p>
+							<a href="https://glavlandstroy.ru" target="_blank" class="see__button button"><p>Смотреть</p></a>
+						</div>
+					</div>
+					</div>
+				<div class="swiper-slide slide__container">
+					<div class="slide__wrapper">
+						<img src="./img/asphalt.jpg" class='portfolio__img' alt="">
+						<div class="portfolio__work-block">
+							<p class="work__title">Сайт <br/> для дорожной компании</p>
+							<p class="work__text">с онлайн-калькулятором</p>
+							<a href="https://asp-glavlandstroy.ru" target="_blank" class="see__button button"><p>Смотреть</p></a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide slide__container">
+					<div class="slide__wrapper">
+						<img src="./img/businessWeek.jpg" class='portfolio__img' alt="">
+						<div class="portfolio__work-block">
+							<p class="work__title">Сайт <br/> посвященный бизнес-событию</p>
+							<p class="work__text">с уникальным дизайном</p>
+							<a href="https://www.businessweek.by" target="_blank" class="see__button button"><p>Смотреть</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__buttons-block">
+				<img src="./img/back.svg" alt="" class="swiper-button-prev">
+				<img src="./img/next.svg" alt="" class="swiper-button-next">
+
+				
+				<!-- <div class="swiper-button-prev">
+					<img src="./img/back.svg" alt="">
+				</div>
+				<div class="swiper-button-next">
+					<img src="./img/next.svg" alt="">
+				</div> -->
+
 			</div>
 		</div>
 	</div>
@@ -305,6 +350,7 @@
 	<p class="copyright">&#169 Александр Сидоренко</p>
 </footer>
 	</div>
-	<script src="./js/index.bundle.js"></script>
+	<script src="./js/swiper.js"></script>
+	<script src="./js/index.js"></script>
 </body>
 </html>
