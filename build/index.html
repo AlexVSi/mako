@@ -166,15 +166,6 @@
 			<div class="portfolio__buttons-block">
 				<img src="./img/back.svg" alt="" class="swiper-button-prev">
 				<img src="./img/next.svg" alt="" class="swiper-button-next">
-
-				
-				<!-- <div class="swiper-button-prev">
-					<img src="./img/back.svg" alt="">
-				</div>
-				<div class="swiper-button-next">
-					<img src="./img/next.svg" alt="">
-				</div> -->
-
 			</div>
 		</div>
 	</div>
@@ -221,16 +212,6 @@
 		<section class="form__section section">
 	<div class="form__container container">
 
-		<!-- <div class="review__block">
-			<h2 class="h2__review-title h2">Вам</br>понравилось?</h2>
-			<div class="review__element element"></div>
-			<div class="review__sub-title sub-title">Нам будет приятна ваша оценка!</div>
-			<div class="review__buttons">
-				<a href="#form" class="go-work__button button"><p>Да, давайте работать!</p></a>
-				<a href="" class="no-work__button button"><p>Нет, мой кумэтру сделает лучше</p></a>
-			</div>
-		</div> -->
-
 		<div class="application__block">
 			<div class="application__container">
 				<img src="img/smile.svg" alt="" class="smile">
@@ -239,69 +220,74 @@
 				<div class="application__element element"></div>
 				<div class="application__sub-title sub-title">Будем рады вам помочь</div>
 				<div class="form__block">
-					<form action="" class="form">
+					<form name="main" action="#" method="post" class="form" id="form">
+
 						<div class="input__box">
 							<p class="input__title">Имя <span>*</span></p>
-							<input type="text" class="input__holder">
+							<input name="name" type="text" class="input__holder _req">
 						</div>
 
 						<div class="input__box">
 							<p class="input__title">Фамилия <span>*</span></p>
-							<input type="text" class="input__holder">
+							<input name="lastname" type="text" class="input__holder _req">
 						</div>
+
 						<div class="input__box">
 							<p class="input__title">Электронная почта <span>*</span></p>
-							<input type="email" class="input__holder">
+							<input name="email" type="email" class="input__holder _req _email">
 						</div>
+
 						<div class="input__box">
 							<p class="input__title">Номер телефона <span>*</span></p>
-							<input type="text" class="input__holder">
+							<input name="phoneNumber" type="text" class="input__holder _req">
 						</div>
 
 						<div class="input__box">
 							<p class="input__title">Вы хотите заказать... <span>*</span></p>
 							<div class="select__box">
-								<select type="">
-									<option selected disabled style="display: none;"></option>
-									<option>Логотип</option>
-									<option>Упаковку</option>
-									<option>Сайт</option>
-									<option>Баннер</option>
-									<option>Оформление соц. сети</option>
-									<option>Визитку</option>
-									<option>Брендбук</option>
-									<option>Вёрстку</option>
-									<option>Другое</option>
+								<select name="service" type="">
+									<!-- <option selected disabled style="display: none;"></option> -->
+									<option value="Логотип">Логотип</option>
+									<option value="Упаковка">Упаковку</option>
+									<option value="Сайт">Сайт</option>
+									<option value="Баннер">Баннер</option>
+									<option value="Оформление соц. сети">Оформление соц. сети</option>
+									<option value="Визитка">Визитку</option>
+									<option value="Брендбук">Брендбук</option>
+									<option value="Вёрстка">Вёрстку</option>
+									<option value="Другое">Другое</option>
 								</select>
 							</div>
 						</div>
+
 						<div class="input__box">
 							<p class="input__title">Название вашего проекта</p>
-							<input type="text" class="input__holder">
+							<input name="projectName" type="text" class="input__holder">
 						</div>
 
 						<div class="input__box">
 							<p class="input__title">Опишите вкратце задачу</p>
-							<textarea></textarea>
+							<textarea name="taskDescription"></textarea>
 						</div>
+
 						<div class="input__box send__box">
 							<p class="input__title">Как вы нас нашли?</p>
 							<div class="select__box">
-								<select type="">
-									<option selected disabled style="display: none;"></option>
-									<option>Реклама в соц. сетях</option>
-									<option>По запросу в интернете</option>
-									<option>Подсказали друзья/знакомые</option>
-									<option>Другое</option>
+								<select name="find" type="">
+									<!-- <option selected disabled style="display: none;"></option> -->
+									<option value="">Реклама в соц. сетях</option>
+									<option value="">По запросу в интернете</option>
+									<option value="">Подсказали друзья/знакомые</option>
+									<option value="">Другое</option>
 								</select>
 							</div>
 							<div class="checkbox">
-								<input class="checkbox__input" type="checkbox" id="check" value="check">
-								<label for="check" class="checkbox__label">даю согласие на обработку моих данных</label>
+								<input class="checkbox__input _req" type="checkbox" id="check" value="check">
+								<label for="check" class="checkbox__label"><span>даю согласие на обработку моих данных</span></label>
 							</div>
 							<div class="form__buttons">
-								<button class="send__button button">Отправить</button>
-								<button class="cancle__button button">Отмена</button>
+								<button type="submit" value="submit" class="send__button button">Отправить</button>
+								<!-- <button class="cancle__button button">Отмена</button> -->
 							</div>
 						</div>
 					</form>
@@ -352,5 +338,6 @@
 	</div>
 	<script src="./js/swiper.js"></script>
 	<script src="./js/index.js"></script>
+	<script src="./js/form.js"></script>
 </body>
 </html>

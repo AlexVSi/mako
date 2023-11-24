@@ -89,6 +89,8 @@
 	flex-wrap: wrap;
 	gap: 30px;
 	// justify-content: space-between;
+	// _sending
+
 }
 input {
 	width: 100%;
@@ -98,6 +100,13 @@ input {
 	color: #181A1E;
 	padding: 8px;
 	font-size: rem(14);
+	transition: 100ms;
+	&:focus {
+		box-shadow: 0 0 10px #5FD1BE;
+	}
+	&._error {
+		box-shadow: 0 0 10px red;
+	}
 }
 .select__box {
 	position: relative;
@@ -107,7 +116,8 @@ input {
 		position: absolute;
 		top: 6px;
 		right: 0;
-		display: none;
+		// display: none;
+		pointer-events: none;
 	}
 }
 select {
@@ -119,6 +129,10 @@ select {
 	font-size: rem(14);
 	-webkit-appearance: none;
 	appearance: none;
+	transition: 100ms;
+	&:focus {
+		box-shadow: 0 0 10px #5FD1BE;
+	}
 }
 option {
 	color: #181A1E;
@@ -130,6 +144,11 @@ textarea {
 	border-radius: 13px;
 	border: 1px solid #5FD1BE;
 	padding: 8px;
+	font-size: rem(14);
+	transition: 100ms;
+	&:focus {
+		box-shadow: 0 0 10px #5FD1BE;
+	}
 }
 .input__box {
 	flex: 0 0 45%;
@@ -146,6 +165,10 @@ textarea {
 		color: #5FD1BE;
 	}
 }
+.checkbox._error .checkbox__label::before {
+	box-shadow: 0 0 10px red;
+}
+
 .checkbox__input {
 	display: none;
 }
@@ -201,6 +224,7 @@ textarea {
 	font-size: rem(15);
 	background: #5FD1BE;
 	box-shadow: 5px 15px 50px 10px rgba(95, 209, 190, 0.30);
+	max-width: 140px;
 }
 .cancle__button {
 	flex: 1 1 auto;

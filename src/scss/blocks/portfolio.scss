@@ -68,7 +68,6 @@
 }
 .portfolio__buttons-block {
 	position: absolute;
-	// height: 60px;
 	display: flex;
 	top: auto;
 	left: auto;
@@ -86,6 +85,7 @@
 		display: none;
 	}
 }
+
 @media(max-width: $tablet) {
 	.portfolio__slider {
 		width: 100%;
