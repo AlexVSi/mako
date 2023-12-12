@@ -245,8 +245,8 @@
 						<div class="input__box">
 							<p class="input__title">Вы хотите заказать... <span>*</span></p>
 							<div class="select__box">
-								<select name="service" type="">
-									<!-- <option selected disabled style="display: none;"></option> -->
+								<select name="service" type="" class="_req">
+									<option value="" selected disabled style="display: none;"></option>
 									<option value="Логотип">Логотип</option>
 									<option value="Упаковка">Упаковку</option>
 									<option value="Сайт">Сайт</option>
@@ -274,11 +274,11 @@
 							<p class="input__title">Как вы нас нашли?</p>
 							<div class="select__box">
 								<select name="find" type="">
-									<!-- <option selected disabled style="display: none;"></option> -->
-									<option value="">Реклама в соц. сетях</option>
-									<option value="">По запросу в интернете</option>
-									<option value="">Подсказали друзья/знакомые</option>
-									<option value="">Другое</option>
+									<option value=""selected disabled style="display: none;"></option>
+									<option value="Реклама в соц. сетях">Реклама в соц. сетях</option>
+									<option value="По запросу в интернете">По запросу в интернете</option>
+									<option value="Подсказали друзья/знакомые">Подсказали друзья/знакомые</option>
+									<option value="Другое">Другое</option>
 								</select>
 							</div>
 							<div class="checkbox">
@@ -287,7 +287,6 @@
 							</div>
 							<div class="form__buttons">
 								<button type="submit" value="submit" class="send__button button">Отправить</button>
-								<!-- <button class="cancle__button button">Отмена</button> -->
 							</div>
 						</div>
 					</form>

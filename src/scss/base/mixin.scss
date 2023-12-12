@@ -19,11 +19,6 @@
 	}
 }
 
-// Пример
-// .block__body {
-// 	@include adaptive-value("padding", 50, 20, 0)
-// }
-
 //TO %
 @function prc($pxOne, $pxTwo) {
 	$result: math.div($pxOne, $pxTwo) * 100%;

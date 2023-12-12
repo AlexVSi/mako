@@ -67,9 +67,6 @@ div, p {
 }
 
 @media(max-width: $mobile) {
-	.container {
-		// max-width: 600px;
-	}
 	.button {
 		font-size: rem(17);
 		padding: 10px 16px;

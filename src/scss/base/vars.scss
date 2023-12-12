@@ -17,21 +17,4 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 $pc: em($containerWidth);
 $tablet: em(991.98);
 $mobile: em(767.98);
-// $mobileSmall: em(479.98);
 $mobileSmall: em(575.98);
-
-// $tablet: em(992);
-// $mobile: em(768);
-// $mobileSmall: em(576);
-// TABLET ====================================================
-@media(max-width: $tablet) {
-}
-
-// MOBILE ==================================================
-@media(max-width: $mobile) {
-
-}
-// MOBILE_SMALL ==================================================
-@media(max-width: $mobileSmall) {
-
-}

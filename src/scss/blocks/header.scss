@@ -13,7 +13,6 @@
 }
 .header__img {
 	margin: 0 120px;
-	// width: 256px;
 	height: 100%;
 }
 .logo {
@@ -26,12 +25,4 @@
 	.header__img {
 		margin: 0 60px;
 	}
-}
-
-@media(max-width: $mobile) {
-
-}
-
-@media(max-width: $mobileSmall) {
-
 }

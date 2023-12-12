@@ -3,7 +3,7 @@
 }
 .portfolio__slider {
 	border-radius: 33px;
-	@include adaptive-value('height', 390, 220, 1);
+	@include adaptive-value('height', 390, 220, 0);
 	position: relative;
 	width: 90%;
 	margin: 0;

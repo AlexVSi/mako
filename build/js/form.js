@@ -16,14 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
 				method: 'POST',
 				body: formData
 			})
-			if (response.ok) {
-				let result = await response.json()
-				alert(result.message)
-				formPreview,innerHTML = ''
-				form.reset()
-			} else {
-				alert('Ошибка')
-			}
+			form.reset()
+			alert('Заявка отправлена. Спасибо, что выбрали нас!')
 		} else {
 			alert('Заполните обязательные поля')
 		}

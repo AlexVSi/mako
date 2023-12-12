@@ -15,7 +15,6 @@
 }
 .review__buttons {
 	display: flex;
-	// justify-content: space-between;
 	gap: 24px;
 	flex-wrap: wrap;
 }
@@ -46,11 +45,9 @@
 }
 .form__container {
 	padding: 0 15px;
-	// width: 1200px;
 	margin: em(50) 0;
 	flex: 1 1 auto;
 	border-radius: 0 28px 28px 0;
-	// border-radius: 28px;
 	background-color: #FFF9F9;
 }
 // =========================================================
@@ -88,9 +85,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	// justify-content: space-between;
-	// _sending
-
 }
 input {
 	width: 100%;
@@ -116,7 +110,6 @@ input {
 		position: absolute;
 		top: 6px;
 		right: 0;
-		// display: none;
 		pointer-events: none;
 	}
 }
@@ -132,6 +125,9 @@ select {
 	transition: 100ms;
 	&:focus {
 		box-shadow: 0 0 10px #5FD1BE;
+	}
+	&._error {
+		box-shadow: 0 0 10px red;
 	}
 }
 option {
@@ -251,7 +247,6 @@ textarea {
 .messenger__list {
 	display: flex;
 	gap: 28px;
-	// justify-content: space-between;
 	height: 48px;
 }
 .messenger__item {
@@ -259,8 +254,6 @@ textarea {
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 7px;
-	// height: 100%;
-	// flex: 0 0 33.333%;
 	align-items: center;	
 }
 .messenger__logo {
@@ -357,8 +350,5 @@ textarea {
 	}
 	.messege__text {
 		font-size: rem(18);
-	}
-	.messenger__list {
-		// height: 60px;
 	}
 }
